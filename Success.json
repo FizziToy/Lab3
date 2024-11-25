@@ -1,0 +1,76 @@
+{
+  "university": {
+    "departments": [
+      {
+        "name": "ТТП",
+        "disciplines": [
+          {
+            "name": "ООП",
+            "students": [
+              {
+                "name": "Петров Богдан",
+                "grade": 85
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ТК",
+        "disciplines": [
+          {
+            "name": "Математичний аналіз",
+            "students": [
+              {
+                "name": "Лимошенко Денис",
+                "grade": 88
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ІОП",
+        "disciplines": [
+          {
+            "name": "Фізика",
+            "students": [
+              {
+                "name": "Тимошенко Віктор",
+                "grade": 82
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ТАП",
+        "disciplines": [
+          {
+            "name": "Теорія ймовірності",
+            "students": [
+              {
+                "name": "Ковальчук Владислав",
+                "grade": 91
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "СП",
+        "disciplines": [
+          {
+            "name": "Філософія",
+            "students": [
+              {
+                "name": "Нечаєва Марина",
+                "grade": 87
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp3.MainPage"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+            <Label Text="JSON File"
+                   SemanticProperties.HeadingLevel="Level1"
+                   FontSize="32" 
+                   HorizontalOptions="Center" 
+                   TextColor="DarkViolet"/>
+
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                <Button Text="Load JSON"
+                        Clicked="OnLoadJsonClicked"
+                        FontSize="16"
+                        TextColor="White"
+                        BackgroundColor="DarkViolet"/>
+                <Button Text="Save JSON"
+                        Clicked="OnSaveJsonClicked"
+                        FontSize="16"
+                        TextColor="White"
+                        BackgroundColor="HotPink"/>
+                <Button Text="Information about program"
+                        FontSize="16"
+                        Clicked="OnAboutClicked"
+                        BackgroundColor="Plum"
+                        TextColor="White"/>
+            </HorizontalStackLayout>
+
+            <Label x:Name="FilePathLabel"
+                   Text="No file loaded"
+                   FontSize="12"
+                   TextColor="Gray"
+                   HorizontalOptions="Center"/>
+
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="End">
+                <Entry x:Name="SearchEntry"
+                       Placeholder="Search..."
+                       FontSize="14"
+                       HorizontalOptions="FillAndExpand"/>
+                <Button Text="Search"
+                        FontSize="14"
+                        Clicked="OnSearchClicked"
+                        BackgroundColor="Pink"
+                        TextColor="Purple"
+                        HorizontalOptions="End"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="15" HorizontalOptions="Center">
+                <Button Text="Add"
+                        FontSize="14"
+                        Clicked="OnAddClicked"
+                        BackgroundColor="Orchid"
+                        TextColor="White"/>
+                <Button Text="Edit"
+                        FontSize="14"
+                        Clicked="OnEditClicked"
+                        BackgroundColor="BlueViolet"
+                        TextColor="White"/>
+                <Button Text="Delete"
+                        FontSize="14"
+                        Clicked="OnDeleteClicked"
+                        BackgroundColor="MediumVioletRed"
+                        TextColor="White"/>
+            </HorizontalStackLayout>
+
+            <ScrollView>
+                <Grid x:Name="DataGrid"
+                      Padding="10"
+                      RowSpacing="2"
+                      ColumnSpacing="5"
+                      BackgroundColor="Orchid">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Name" FontAttributes="Bold" Grid.Row="0" Grid.Column="0"/>
+                    <Label Text="Discipline" FontAttributes="Bold" Grid.Row="0" Grid.Column="1"/>
+                    <Label Text="Department" FontAttributes="Bold" Grid.Row="0" Grid.Column="2"/>
+                    <Label Text="Grade" FontAttributes="Bold" Grid.Row="0" Grid.Column="3"/>
+                </Grid>
+            </ScrollView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
